@@ -5,6 +5,7 @@
 //  Created by Grizzowl on 2022/05/20.
 //
 
+import UIKit
 import SwiftUI
 
 struct NoItemsView: View {
@@ -12,16 +13,18 @@ struct NoItemsView: View {
     @State var animate: Bool = false
     let secondaryAccentColor = Color("SecondaryAccentColor")
     
+    
     var body: some View {
         ScrollView {
             VStack {
-                Text("There are no items")
+                Text("There are no items 📂")
                     .font(.title)
-                    .fontWeight(.semibold)
-                Text("add items you lazy fuck, and buy the pro for $69.99")
+                    .fontWeight(.bold)
+                    .padding(.bottom, 10)
+                Text("➕ ADD ITEMS and buy the pro for $69.99pm")
                     .padding(.bottom, 20)
                 NavigationLink(
-                destination: WeekdayView(), //link to weekday view AddView()
+                destination: WeekdayMenuController(), //link to weekday view 
                 label: {
                     Text("Add Something")
                         .foregroundColor(.white)
@@ -32,16 +35,16 @@ struct NoItemsView: View {
                         .cornerRadius(10)
                     
                 })
-                .padding(.horizontal, animate ? 30 : 50)
+                .padding(/*.horizontal, animate ? 30 : 50*/)
                 .shadow(
                     color: animate ? secondaryAccentColor.opacity(0.7) :
                         Color.accentColor.opacity(0.7),
-                    radius: animate ? 30 : 10,
+                    radius: 10 ,
                     x: 0,
-                    y: animate ? 50 : 30
+                    y: 20
                     )
-                .scaleEffect(animate ? 1.1 : 1.0)
-                .offset(y: animate ? -7 : 0)
+                //.scaleEffect(animate ? 1.1 : 1.0)
+                //.offset(y: animate ? -7 : 0)
             }
             .frame(minWidth: 400)
             .multilineTextAlignment(.center)
@@ -50,6 +53,7 @@ struct NoItemsView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
+    
     
     func addAnimation() {
         guard !animate else { return }
@@ -66,6 +70,9 @@ struct NoItemsView: View {
     }
     
 }
+
+
+
 
 struct NoItemsView_Previews: PreviewProvider {
     static var previews: some View {
