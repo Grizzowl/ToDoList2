@@ -1,5 +1,5 @@
 //
-//  AddView.swift
+//  GeneralAddView.swift
 //  ToDoList
 //
 //  Created by Grizzowl on 2022/05/17.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddView: View {
+struct GeneralAddView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel: ListViewModel
@@ -25,6 +25,7 @@ struct AddView: View {
                     .background(Color(UIColor.secondarySystemBackground))
                 .cornerRadius(10)
                 
+                
                 Button(action: saveButtonPressed, label: {
                     Text("Save".uppercased())
                         .foregroundColor(.white)
@@ -37,14 +38,23 @@ struct AddView: View {
             }
             .padding(14)
         }
-        .navigationTitle("Add an Item ✍️")
+        //Updated title to be aligned to center
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("General list ✍️")
+                    .font(.largeTitle.bold())
+                    .accessibilityAddTraits(.isHeader)
+            }
+        }
+        
         .alert(isPresented: $showAlert, content: getAlert)
     }
     
     //find a way to get the app to read and write from the core data
     func saveButtonPressed() {
         if textIsAppropriate() {
-            listViewModel.addItem(title: textFieldText)
+            listViewModel.addItem(title: textFieldText, day: "General")
             presentationMode.wrappedValue.dismiss()
         }
     }
@@ -64,17 +74,19 @@ struct AddView: View {
 }
 
 
-struct AddView_Previews: PreviewProvider {
+
+
+struct GeneralAddView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             NavigationView {
-                AddView()
+                GeneralAddView()
             }
             .preferredColorScheme(.light)
             .environmentObject(ListViewModel())
             
             NavigationView {
-                AddView()
+                GeneralAddView()
             }
             .preferredColorScheme(.dark)
             .environmentObject(ListViewModel())

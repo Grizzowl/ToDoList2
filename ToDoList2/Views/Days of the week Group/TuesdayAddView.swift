@@ -1,5 +1,5 @@
 //
-//  FridayAddView.swift
+//  TuesdayAddView.swift
 //  ToDoList2
 //
 //  Created by Grizzowl on 2022/06/13.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FridayAddView: View {
+struct TuesdayAddView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel: ListViewModel
@@ -37,14 +37,23 @@ struct FridayAddView: View {
             }
             .padding(14)
         }
-        .navigationTitle("Add an Item for Friday ✍️")
+        
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Tuesdays list ✍️")
+                    .font(.largeTitle.bold())
+                    .accessibilityAddTraits(.isHeader)
+            }
+        }
+        
         .alert(isPresented: $showAlert, content: getAlert)
     }
     
     //find a way to get the app to read and write from the core data
     func saveButtonPressed() {
         if textIsAppropriate() {
-            listViewModel.addItem(title: textFieldText)
+            listViewModel.addItem(title: textFieldText, day: "Tuesday")
             presentationMode.wrappedValue.dismiss()
         }
     }
@@ -66,17 +75,17 @@ struct FridayAddView: View {
 
 
 
-struct FridayAddView_Previews: PreviewProvider {
+struct TuesdayAddView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             NavigationView {
-                FridayAddView()
+                TuesdayAddView()
             }
             .preferredColorScheme(.light)
             .environmentObject(ListViewModel())
             
             NavigationView {
-                FridayAddView()
+                TuesdayAddView()
             }
             .preferredColorScheme(.dark)
             .environmentObject(ListViewModel())
@@ -84,3 +93,4 @@ struct FridayAddView_Previews: PreviewProvider {
         
     }
 }
+
