@@ -7,6 +7,10 @@
 
 import Foundation
 
+
+//  move saved data from User Defaults to core data for easy read and write for the days
+//  Update to coredata
+
 class ListViewModel: ObservableObject {
     
     @Published var items: [ItemModel] = [] {
@@ -39,8 +43,8 @@ class ListViewModel: ObservableObject {
         items.move(fromOffsets: from, toOffset: to)
     }
     
-    func addItem(title: String) {
-        let newItem = ItemModel(title: title, isCompleted: false)
+    func addItem(title: String, day: String) {
+        let newItem = ItemModel(title: title,day: day, isCompleted: false)
         items.append(newItem)
     }
     

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="weeklyPlannerScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="WeekdayMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MvL-ro-74M">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-pr-pqj">
+                                <rect key="frame" x="20" y="157" width="388" height="575"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBK-d8-XrK">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="1RS-SL-ewQ"/>
+                                            <constraint firstAttribute="height" constant="50" id="V4O-K9-6lW"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="General">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="GeneralNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3YP-ZK-wpo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgv-1g-Ous">
+                                        <rect key="frame" x="0.0" y="75" width="388" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VOx-6h-81U"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="W2K-Ht-H8P"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Monday">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="MondayNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYt-Vr-AMv"/>
+                                            <action selector="dayNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WSW-20-T4E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybZ-9G-HyZ">
+                                        <rect key="frame" x="0.0" y="150" width="388" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IBj-rI-QgZ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="W8e-B1-Pjz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Tuesday">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="TuesdayNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CoO-bh-HQ7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKU-MN-0PO">
+                                        <rect key="frame" x="0.0" y="225" width="388" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ZKH-ZA-HJe"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="pXv-xK-jwQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Wednesday">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="WednesdayNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZmG-OE-yYd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgQ-SZ-Dzk">
+                                        <rect key="frame" x="0.0" y="300" width="388" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="EGy-Po-ivT"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="ODx-YK-I3d"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Thursday">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ThursdayNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjP-ER-E51"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35A-w0-GeT">
+                                        <rect key="frame" x="0.0" y="375" width="388" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="jxQ-VX-sXG"/>
+                                            <constraint firstAttribute="height" constant="50" id="z79-b5-fR2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Friday">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="FridayNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0WK-vk-PjW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mo-DE-ygC">
+                                        <rect key="frame" x="0.0" y="450" width="388" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="5VN-pq-uj7"/>
+                                            <constraint firstAttribute="height" constant="50" id="YEx-cw-M9a"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Saturday">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="SaturdayNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nG8-3u-7OE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kt5-ob-37O">
+                                        <rect key="frame" x="0.0" y="525" width="388" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="60f-Fn-ffh"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="GOc-ES-hgU"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Sunday">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="SundayNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUB-J4-JpM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq0-jP-eIc">
+                                <rect key="frame" x="26" y="44" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Planner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXH-X1-VX2">
+                                <rect key="frame" x="98.333333333333329" y="78" width="231.66666666666669" height="56"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p4d-HR-OBm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Aq0-jP-eIc" firstAttribute="top" secondItem="p4d-HR-OBm" secondAttribute="top" id="1u1-6z-ymW"/>
+                            <constraint firstItem="QlT-pr-pqj" firstAttribute="leading" secondItem="p4d-HR-OBm" secondAttribute="leading" constant="20" id="8i5-EE-1qI"/>
+                            <constraint firstItem="p4d-HR-OBm" firstAttribute="trailing" secondItem="QlT-pr-pqj" secondAttribute="trailing" constant="20" id="Ktp-hn-G6p"/>
+                            <constraint firstItem="Aq0-jP-eIc" firstAttribute="leading" secondItem="p4d-HR-OBm" secondAttribute="leading" constant="26" id="RBZ-t2-Phb"/>
+                            <constraint firstItem="p4d-HR-OBm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Aq0-jP-eIc" secondAttribute="trailing" symbolic="YES" id="U8w-82-xkX"/>
+                            <constraint firstItem="nXH-X1-VX2" firstAttribute="centerX" secondItem="QlT-pr-pqj" secondAttribute="centerX" id="cl2-J4-myW"/>
+                            <constraint firstItem="QlT-pr-pqj" firstAttribute="top" secondItem="p4d-HR-OBm" secondAttribute="top" constant="113" id="hdM-vu-hFA"/>
+                            <constraint firstItem="nXH-X1-VX2" firstAttribute="top" secondItem="p4d-HR-OBm" secondAttribute="top" constant="34" id="rhD-JJ-A2t"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
