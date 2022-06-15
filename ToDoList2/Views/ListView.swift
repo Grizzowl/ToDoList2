@@ -4,7 +4,6 @@
 //
 //  Created by Grizzowl on 2022/05/17.
 //
-
 import SwiftUI
 
 struct ListView: View {
@@ -18,17 +17,27 @@ struct ListView: View {
                     .transition(AnyTransition.opacity.animation(.easeIn))
             } else { //update view to shows days of the week
                 List{
+                    //Find a way to add the others days in View then add relevant data into them
+                    // Then make the days into collapsible menu
+                    Text("General")
+                    
+                    //Might need to move the loop then call the filtered results
                     ForEach(listViewModel.items) { item in
-                        ListRowView(item: item)
+                        
+                        ListRowView (item: item, day: item)
+                       
                             .onTapGesture {
                                 withAnimation(.linear) {
                                     listViewModel.updateItem(item: item)
+                                    
                                 }
                             }
                     }
-                    .onDelete(perform: listViewModel.deleteItem)
-                    .onMove(perform: listViewModel.moveItem)
+                   .onDelete(perform: listViewModel.deleteItem)
+                   .onMove(perform: listViewModel.moveItem)
                 }
+                
+                
                 .listStyle(PlainListStyle())
             }
             
@@ -38,11 +47,10 @@ struct ListView: View {
         .navigationBarItems(
             leading: EditButton(),
             trailing:
-                NavigationLink("Add", destination: AddView())
+                NavigationLink("Add", destination: WeekdayMenuController())
         )
         
     }
-
     
 }
 
@@ -55,5 +63,7 @@ struct ListView_Previews: PreviewProvider {
     }
 }
     
+
+
 
 
