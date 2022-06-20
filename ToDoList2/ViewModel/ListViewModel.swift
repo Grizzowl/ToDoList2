@@ -8,16 +8,19 @@
 import Foundation
 
 
-//  move saved data from User Defaults to core data for easy read and write for the days
-//  Update to coredata
+    //  Core Data for a future upgrade
+    //  This View Model is set up to handle the C.R.U.D. of the app 
 
 class ListViewModel: ObservableObject {
+    
     
     @Published var items: [ItemModel] = [] {
         didSet {
             saveItems()
         }
     }
+    
+   
     
     let itemsKey: String = "items_list"
     
@@ -62,11 +65,15 @@ class ListViewModel: ObservableObject {
         
     }
     
+   
+    
     func saveItems() {
         if let encodeData = try? JSONEncoder().encode(items) {
             UserDefaults.standard.set(encodeData, forKey: itemsKey)
         }
     }
+    
+    
     
 }
 
