@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D83C7D1E2857479D0014BC8F /* TuesdayAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7D1D2857479D0014BC8F /* TuesdayAddView.swift */; };
+		D83C7D20285747B00014BC8F /* WednesdayAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7D1F285747B00014BC8F /* WednesdayAddView.swift */; };
+		D83C7D22285747C60014BC8F /* ThursdayAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7D21285747C60014BC8F /* ThursdayAddView.swift */; };
+		D83C7D24285747D50014BC8F /* FridayAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7D23285747D50014BC8F /* FridayAddView.swift */; };
+		D83C7D26285747F20014BC8F /* SaturdayAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7D25285747F20014BC8F /* SaturdayAddView.swift */; };
+		D83C7D28285748060014BC8F /* SundayAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7D27285748050014BC8F /* SundayAddView.swift */; };
 		D8A07598283B6BC500D46EFF /* ToDoList2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A07597283B6BC500D46EFF /* ToDoList2App.swift */; };
 		D8A0759C283B6BC700D46EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A0759B283B6BC700D46EFF /* Assets.xcassets */; };
 		D8A0759F283B6BC700D46EFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A0759E283B6BC700D46EFF /* Preview Assets.xcassets */; };
@@ -15,14 +21,20 @@
 		D8A075AD283B6D0300D46EFF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A075AC283B6D0300D46EFF /* ListView.swift */; };
 		D8A075AF283B6D2800D46EFF /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A075AE283B6D2800D46EFF /* ListRowView.swift */; };
 		D8A075B1283B6D4D00D46EFF /* NoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A075B0283B6D4D00D46EFF /* NoItemView.swift */; };
-		D8A075B3283B6D6B00D46EFF /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A075B2283B6D6B00D46EFF /* AddView.swift */; };
+		D8A075B3283B6D6B00D46EFF /* GeneralAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A075B2283B6D6B00D46EFF /* GeneralAddView.swift */; };
 		D8A075B5283B6D8200D46EFF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A075B4283B6D8200D46EFF /* Launch Screen.storyboard */; };
-		D8CE538528531E6300454FA8 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE538428531E6300454FA8 /* WeekdayView.swift */; };
-		D8CE538928532D8700454FA8 /* DaysList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE538828532D8700454FA8 /* DaysList.swift */; };
-		D8CE53952853619700454FA8 /* WeekdayItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE53942853619700454FA8 /* WeekdayItems.swift */; };
+		D8AE25972858874600440AB8 /* WeekdayMenuDraft.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AE25962858874600440AB8 /* WeekdayMenuDraft.storyboard */; };
+		D8AE25992858A5EA00440AB8 /* WeekdayMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE25982858A5EA00440AB8 /* WeekdayMenuController.swift */; };
+		D8C7B38428571AC700C58DA1 /* MondayAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7B38328571AC700C58DA1 /* MondayAddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D83C7D1D2857479D0014BC8F /* TuesdayAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesdayAddView.swift; sourceTree = "<group>"; };
+		D83C7D1F285747B00014BC8F /* WednesdayAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayAddView.swift; sourceTree = "<group>"; };
+		D83C7D21285747C60014BC8F /* ThursdayAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursdayAddView.swift; sourceTree = "<group>"; };
+		D83C7D23285747D50014BC8F /* FridayAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridayAddView.swift; sourceTree = "<group>"; };
+		D83C7D25285747F20014BC8F /* SaturdayAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturdayAddView.swift; sourceTree = "<group>"; };
+		D83C7D27285748050014BC8F /* SundayAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SundayAddView.swift; sourceTree = "<group>"; };
 		D8A07594283B6BC500D46EFF /* ToDoList2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A07597283B6BC500D46EFF /* ToDoList2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList2App.swift; sourceTree = "<group>"; };
 		D8A0759B283B6BC700D46EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,11 +44,11 @@
 		D8A075AC283B6D0300D46EFF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		D8A075AE283B6D2800D46EFF /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		D8A075B0283B6D4D00D46EFF /* NoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemView.swift; sourceTree = "<group>"; };
-		D8A075B2283B6D6B00D46EFF /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		D8A075B2283B6D6B00D46EFF /* GeneralAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAddView.swift; sourceTree = "<group>"; };
 		D8A075B4283B6D8200D46EFF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		D8CE538428531E6300454FA8 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
-		D8CE538828532D8700454FA8 /* DaysList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysList.swift; sourceTree = "<group>"; };
-		D8CE53942853619700454FA8 /* WeekdayItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayItems.swift; sourceTree = "<group>"; };
+		D8AE25962858874600440AB8 /* WeekdayMenuDraft.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeekdayMenuDraft.storyboard; sourceTree = "<group>"; };
+		D8AE25982858A5EA00440AB8 /* WeekdayMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayMenuController.swift; sourceTree = "<group>"; };
+		D8C7B38328571AC700C58DA1 /* MondayAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayAddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				D8A075A5283B6C5F00D46EFF /* ItemModel.swift */,
-				D8CE538828532D8700454FA8 /* DaysList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,17 +122,40 @@
 				D8A075AC283B6D0300D46EFF /* ListView.swift */,
 				D8A075AE283B6D2800D46EFF /* ListRowView.swift */,
 				D8A075B0283B6D4D00D46EFF /* NoItemView.swift */,
-				D8A075B2283B6D6B00D46EFF /* AddView.swift */,
-				D8CE538428531E6300454FA8 /* WeekdayView.swift */,
-				D8CE53942853619700454FA8 /* WeekdayItems.swift */,
+				D8AE256F28585A3A00440AB8 /* Weekly View Controller */,
+				D8C7B382285719E000C58DA1 /* Days of the week Group */,
 				D8A075B4283B6D8200D46EFF /* Launch Screen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D8AE256F28585A3A00440AB8 /* Weekly View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE25982858A5EA00440AB8 /* WeekdayMenuController.swift */,
+			);
+			path = "Weekly View Controller";
+			sourceTree = "<group>";
+		};
+		D8C7B382285719E000C58DA1 /* Days of the week Group */ = {
+			isa = PBXGroup;
+			children = (
+				D8A075B2283B6D6B00D46EFF /* GeneralAddView.swift */,
+				D8C7B38328571AC700C58DA1 /* MondayAddView.swift */,
+				D83C7D1D2857479D0014BC8F /* TuesdayAddView.swift */,
+				D83C7D1F285747B00014BC8F /* WednesdayAddView.swift */,
+				D83C7D21285747C60014BC8F /* ThursdayAddView.swift */,
+				D83C7D23285747D50014BC8F /* FridayAddView.swift */,
+				D83C7D25285747F20014BC8F /* SaturdayAddView.swift */,
+				D83C7D27285748050014BC8F /* SundayAddView.swift */,
+			);
+			path = "Days of the week Group";
+			sourceTree = "<group>";
+		};
 		D8CE538E28534F9000454FA8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D8AE25962858874600440AB8 /* WeekdayMenuDraft.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -184,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AE25972858874600440AB8 /* WeekdayMenuDraft.storyboard in Resources */,
 				D8A075B5283B6D8200D46EFF /* Launch Screen.storyboard in Resources */,
 				D8A0759F283B6BC700D46EFF /* Preview Assets.xcassets in Resources */,
 				D8A0759C283B6BC700D46EFF /* Assets.xcassets in Resources */,
@@ -197,15 +232,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A075B3283B6D6B00D46EFF /* AddView.swift in Sources */,
-				D8CE538528531E6300454FA8 /* WeekdayView.swift in Sources */,
+				D8A075B3283B6D6B00D46EFF /* GeneralAddView.swift in Sources */,
+				D83C7D26285747F20014BC8F /* SaturdayAddView.swift in Sources */,
+				D83C7D20285747B00014BC8F /* WednesdayAddView.swift in Sources */,
+				D83C7D28285748060014BC8F /* SundayAddView.swift in Sources */,
+				D8AE25992858A5EA00440AB8 /* WeekdayMenuController.swift in Sources */,
 				D8A075AD283B6D0300D46EFF /* ListView.swift in Sources */,
 				D8A075A6283B6C5F00D46EFF /* ItemModel.swift in Sources */,
 				D8A075AF283B6D2800D46EFF /* ListRowView.swift in Sources */,
-				D8CE53952853619700454FA8 /* WeekdayItems.swift in Sources */,
+				D83C7D24285747D50014BC8F /* FridayAddView.swift in Sources */,
 				D8A07598283B6BC500D46EFF /* ToDoList2App.swift in Sources */,
+				D83C7D22285747C60014BC8F /* ThursdayAddView.swift in Sources */,
+				D8C7B38428571AC700C58DA1 /* MondayAddView.swift in Sources */,
 				D8A075B1283B6D4D00D46EFF /* NoItemView.swift in Sources */,
-				D8CE538928532D8700454FA8 /* DaysList.swift in Sources */,
+				D83C7D1E2857479D0014BC8F /* TuesdayAddView.swift in Sources */,
 				D8A075A9283B6C9100D46EFF /* ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
