@@ -10,7 +10,7 @@ import SwiftUI
 struct ListRowView: View {
     
     let item: ItemModel
-    let day:  ItemModel
+    let day: ItemModel
     
     var body: some View {
         
@@ -20,6 +20,7 @@ struct ListRowView: View {
                 Image(systemName: item.isCompleted ? "checkmark.circle" : "circle")
                     .foregroundColor(item.isCompleted ? .green : .red)
                 Text(item.title)
+                
                 Spacer()
             }
             .font(.title2)
